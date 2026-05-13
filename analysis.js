@@ -303,7 +303,7 @@ async function startReportGeneration() {
     clearInterval(interval);
     loadingSection.hidden = true;
     reportBody.innerHTML =
-      '<p style="color:#ef4444;font-size:14px;padding:24px 0">Something went wrong generating your report. Please email us at <a href="mailto:hello@your-domain.com">hello@your-domain.com</a>.</p>';
+      '<p style="color:#ef4444;font-size:14px;padding:24px 0">Something went wrong generating your report. Please email us at <a href="mailto:company@atla-ai.co">company@atla-ai.co</a>.</p>';
     reportBody.classList.add('is-visible');
     console.error(err);
   }

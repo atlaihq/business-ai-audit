@@ -1,4 +1,4 @@
-# Business AI Audit — by ATL.AI
+# Business AI Audit — by ATLA AI
 
 > A lightweight, open-source conversational audit tool that helps businesses identify AI automation opportunities in minutes.
 
@@ -13,12 +13,12 @@ A 4-step onboarding flow that collects business context, sends it to an AI model
 
 ## Demo
 
-Live version: [atl.ai/analysis](https://atl.ai/analysis)
+Live version: [atla-ai.co](https://atla-ai.co)
 
 ## Stack
 
 - Vanilla HTML, CSS, JavaScript — zero frameworks
-- Anthropic Claude API (claude-sonnet) for report generation
+- Anthropic Claude API (claude-sonnet-4-6) for report generation
 - Google Sheets via Apps Script for lead capture (optional)
 - Fully static — deployable on Vercel, Netlify, or GitHub Pages
 
@@ -38,7 +38,7 @@ const ANTHROPIC_API_KEY = "YOUR_API_KEY_HERE";
 
 Get your key at: https://platform.anthropic.com/api-keys
 
-> ⚠️ Never commit your real API key. Use environment variables in production.
+> ⚠️ **Security:** Never commit your real API key. For production, proxy the API call through a backend (Firebase Cloud Functions, Vercel Edge Functions, Cloudflare Workers).
 
 ### 3. Open locally
 Use VS Code Live Server or any static server:
@@ -73,9 +73,10 @@ The system prompt sent to Claude is clearly labeled and documented.
 
 ## Security Notes
 
-- Never expose your Anthropic API key on the frontend in production
-- For production use, proxy API calls through a backend (Vercel Edge Functions, Cloudflare Workers, etc.)
-- This repo is intended as a reference implementation
+- **Never** expose your Anthropic API key in frontend code in production
+- For production use, proxy API calls through a backend
+- This repo is a reference implementation — the production version of this tool uses a secure backend
+- See the security warning at the top of `analysis.js`
 
 ## License
 
@@ -83,4 +84,5 @@ MIT — free to use, modify, and deploy.
 
 ---
 
-Built by [ATL.AI](https://atl.ai) — Custom AI Infrastructure for Ambitious Businesses.
+Built by [ATLA AI](https://atla-ai.co) — Custom AI Infrastructure for Ambitious Businesses.  
+Contact: company@atla-ai.co
